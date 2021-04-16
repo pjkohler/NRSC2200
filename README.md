@@ -9,7 +9,7 @@ Neuroscience Techniques
 ### Eye Tracking module
 *	Webgazer: webcam-based eye-tracking, already implemented in JsPsych
 *	Gazepoint GP3: purchased 1 with initial FIT funding
-  * [Psychopy GP3 implementation notes](https://www.psychopy.org/api/iohub/device/eyetracker_interface/GazePoint_Implementation_Notes.html)
+    *	[Psychopy GP3 implementation notes](https://www.psychopy.org/api/iohub/device/eyetracker_interface/GazePoint_Implementation_Notes.html)
 *	AdHawk: quite expensive, not clear wearable eye-tracker is advantageous 
 *	Eye Tribe: 1 available from Peter Tse, possibly 2 more from Gideon
 
