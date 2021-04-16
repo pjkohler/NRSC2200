@@ -24,11 +24,15 @@ Neuroscience Techniques
   * [NMA intro video](https://www.youtube.com/watch?v=iOCcY0QFMS4)
 
 ### EEG module
-* Muse Headband(COST: $2881.41 for 10 sets)
+* Introductory article: [*EEG and MEG: Relevance to Neuroscience*](https://www.cell.com/neuron/fulltext/S0896-6273(13)00920-3)
+* Textbook: [*EEG and MEG Primer*](https://oxfordmedicine.com/view/10.1093/med/9780190497774.001.0001/med-9780190497774)
+* Muse Headband
+  * COST: $2881.41 for 10 sets
 * [Natalie Schaworonkow's demos](http://mnemai.org/demos/)
-* Mark's Kramers Python for the practicing neuroscientist 
+* Mark's Kramers *Python for the practicing neuroscientist*
   * [notebook](https://mark-kramer.github.io/Case-Studies-Python/intro.html)
   * [eLife article](https://elifesciences.org/labs/f779833b/python-for-the-practicing-neuroscientist-an-online-educational-resource)
+* [Preprocessed open dataset](http://fcon_1000.projects.nitrc.org/indi/retro/MPI_LEMON/downloads/download_EEG.html)
 * SSVEP spatial frequency response function? 
 * SSVEP faces?
 
