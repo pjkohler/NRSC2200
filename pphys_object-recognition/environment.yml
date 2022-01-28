@@ -1,0 +1,7 @@
+name: pphys_object-recognition
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - matplotlib
+  - pandas
