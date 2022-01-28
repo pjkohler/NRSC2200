@@ -1,0 +1,1 @@
+https://github.com/wichmann-lab/python-psignifit/zipball/master
