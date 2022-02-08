@@ -1,0 +1,602 @@
+success,trial_type,trial_index,time_elapsed,internal_node_id,rt,stimulus,key_press,responses,button_pressed,images,left_choice,right_choice
+TRUE,fullscreen,0,143512,0.0-0.0,,,,,,,,
+,html-keyboard-response,1,146149,0.0-1.0,2634.2,Welcome to the experiment. Press any key to begin.,32,,,,,
+,survey-html-form,2,159306,0.0-2.0,13154.2,,,"{""p_id"":""4007"",""age"":""20"",""handedness"":""right"",""sex"":""female"",""other_sex"":""""}",,,,
+,html-keyboard-response,3,174772,0.0-3.0,15464.1,"<p>Please fixate at the center '+' sign which will appear once you press any key. Then, <strong> an image </strong> will be shown in the center of the screen.</p><p>The image will contain an object.This will be followed by a <strong> Choice Screen </strong> containing two objects. Please choose the option <strong>[Click on the object]</strong> that you think was present in the image<p>Press any key to begin.</p>",32,,,,,
+,html-keyboard-response,4,177776,0.0-4.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,5,178281,0.0-5.0,null,stimuli/images_hvm10/im8.png,,,null,8,2,0
+,html-button-response,6,180404,0.0-6.0,2119.3,,,,1,,,
+,html-keyboard-response,7,181408,0.0-7.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,8,181926,0.0-8.0,null,stimuli/images_hvm10/im142.png,,,null,142,7,4
+,html-button-response,9,183458,0.0-9.0,1529.5,,,,0,,,
+,html-keyboard-response,10,184460,0.0-10.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,11,184970,0.0-11.0,null,stimuli/images_hvm10/im172.png,,,null,172,8,7
+,html-button-response,12,186849,0.0-12.0,1876.8,,,,0,,,
+,html-keyboard-response,13,187851,0.0-13.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,14,188354,0.0-14.0,null,stimuli/images_hvm10/im126.png,,,null,126,6,1
+,html-button-response,15,190255,0.0-15.0,1900.1,,,,0,,,
+,html-keyboard-response,16,191270,0.0-16.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,17,191774,0.0-17.0,null,stimuli/images_hvm10/im170.png,,,null,170,8,1
+,html-button-response,18,193029,0.0-18.0,1252.6,,,,0,,,
+,html-keyboard-response,19,194047,0.0-19.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,20,194550,0.0-20.0,null,stimuli/images_hvm10/im147.png,,,null,147,7,5
+,html-button-response,21,196025,0.0-21.0,1473.6,,,,0,,,
+,html-keyboard-response,22,197027,0.0-22.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,23,197532,0.0-23.0,null,stimuli/images_hvm10/im149.png,,,null,149,7,4
+,html-button-response,24,198643,0.0-24.0,1110,,,,0,,,
+,html-keyboard-response,25,199659,0.0-25.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,26,200174,0.0-26.0,null,stimuli/images_hvm10/im161.png,,,null,161,5,8
+,html-button-response,27,201103,0.0-27.0,926.6,,,,1,,,
+,html-keyboard-response,28,202114,0.0-28.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,29,202626,0.0-29.0,null,stimuli/images_hvm10/im56.png,,,null,56,2,7
+,html-button-response,30,203693,0.0-30.0,1063,,,,0,,,
+,html-keyboard-response,31,204698,0.0-31.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,32,205215,0.0-32.0,null,stimuli/images_hvm10/im171.png,,,null,171,0,8
+,html-button-response,33,206397,0.0-33.0,1179.5,,,,1,,,
+,html-keyboard-response,34,207399,0.0-34.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,35,207902,0.0-35.0,null,stimuli/images_hvm10/im154.png,,,null,154,7,0
+,html-button-response,36,208790,0.0-36.0,886.6,,,,0,,,
+,html-keyboard-response,37,209801,0.0-37.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,38,210315,0.0-38.0,null,stimuli/images_hvm10/im113.png,,,null,113,8,5
+,html-button-response,39,211566,0.0-39.0,1247.7,,,,1,,,
+,html-keyboard-response,40,212568,0.0-40.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,41,213074,0.0-41.0,null,stimuli/images_hvm10/im0.png,,,null,0,0,3
+,html-button-response,42,214163,0.0-42.0,1086.4,,,,0,,,
+,html-keyboard-response,43,215179,0.0-43.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,44,215694,0.0-44.0,null,stimuli/images_hvm10/im70.png,,,null,70,2,3
+,html-button-response,45,216555,0.0-45.0,858,,,,1,,,
+,html-keyboard-response,46,217556,0.0-46.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,47,218067,0.0-47.0,null,stimuli/images_hvm10/im194.png,,,null,194,4,9
+,html-button-response,48,219163,0.0-48.0,1094.2,,,,1,,,
+,html-keyboard-response,49,220172,0.0-49.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,50,220684,0.0-50.0,null,stimuli/images_hvm10/im196.png,,,null,196,9,5
+,html-button-response,51,221626,0.0-51.0,938.6,,,,0,,,
+,html-keyboard-response,52,222636,0.0-52.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,53,223153,0.0-53.0,null,stimuli/images_hvm10/im85.png,,,null,85,4,0
+,html-button-response,54,225127,0.0-54.0,1971.7,,,,1,,,
+,html-keyboard-response,55,226137,0.0-55.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,56,226642,0.0-56.0,null,stimuli/images_hvm10/im146.png,,,null,146,7,1
+,html-button-response,57,227447,0.0-57.0,801.6,,,,0,,,
+,html-keyboard-response,58,228457,0.0-58.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,59,228969,0.0-59.0,null,stimuli/images_hvm10/im99.png,,,null,99,4,2
+,html-button-response,60,229744,0.0-60.0,770.9,,,,0,,,
+,html-keyboard-response,61,230755,0.0-61.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,62,231268,0.0-62.0,null,stimuli/images_hvm10/im107.png,,,null,107,9,5
+,html-button-response,63,232067,0.0-63.0,796.4,,,,1,,,
+,html-keyboard-response,64,233076,0.0-64.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,65,233589,0.0-65.0,null,stimuli/images_hvm10/im89.png,,,null,89,6,4
+,html-button-response,66,234376,0.0-66.0,785,,,,1,,,
+,html-keyboard-response,67,235393,0.0-67.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,68,235912,0.0-68.0,null,stimuli/images_hvm10/im165.png,,,null,165,8,9
+,html-button-response,69,237772,0.0-69.0,1857.3,,,,0,,,
+,html-keyboard-response,70,238774,0.0-70.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,71,239276,0.0-71.0,null,stimuli/images_hvm10/im58.png,,,null,58,2,1
+,html-button-response,72,240086,0.0-72.0,806.4,,,,0,,,
+,html-keyboard-response,73,241089,0.0-73.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,74,241606,0.0-74.0,null,stimuli/images_hvm10/im21.png,,,null,21,1,4
+,html-button-response,75,242729,0.0-75.0,1120.5,,,,0,,,
+,html-keyboard-response,76,243736,0.0-76.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,77,244254,0.0-77.0,null,stimuli/images_hvm10/im13.png,,,null,13,0,2
+,html-button-response,78,245400,0.0-78.0,1142.3,,,,0,,,
+,html-keyboard-response,79,246403,0.0-79.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,80,246918,0.0-80.0,null,stimuli/images_hvm10/im174.png,,,null,174,4,8
+,html-button-response,81,247852,0.0-81.0,930.8000001,,,,1,,,
+,html-keyboard-response,82,248863,0.0-82.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,83,249378,0.0-83.0,null,stimuli/images_hvm10/im100.png,,,null,100,8,5
+,html-button-response,84,250104,0.0-84.0,722.1,,,,1,,,
+,html-keyboard-response,85,251113,0.0-85.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,86,251624,0.0-86.0,null,stimuli/images_hvm10/im1.png,,,null,1,5,0
+,html-button-response,87,252400,0.0-87.0,772.9,,,,1,,,
+,html-keyboard-response,88,253405,0.0-88.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,89,253920,0.0-89.0,null,stimuli/images_hvm10/im50.png,,,null,50,2,5
+,html-button-response,90,254801,0.0-90.0,877.5,,,,0,,,
+,html-keyboard-response,91,255819,0.0-91.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,92,256324,0.0-92.0,null,stimuli/images_hvm10/im188.png,,,null,188,9,4
+,html-button-response,93,257110,0.0-93.0,783,,,,0,,,
+,html-keyboard-response,94,258118,0.0-94.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,95,258622,0.0-95.0,null,stimuli/images_hvm10/im90.png,,,null,90,1,4
+,html-button-response,96,260489,0.0-96.0,1865.4,,,,1,,,
+,html-keyboard-response,97,261498,0.0-97.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,98,262008,0.0-98.0,null,stimuli/images_hvm10/im25.png,,,null,25,8,1
+,html-button-response,99,263245,0.0-99.0,1235.3,,,,1,,,
+,html-keyboard-response,100,264253,0.0-100.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,101,264769,0.0-101.0,null,stimuli/images_hvm10/im176.png,,,null,176,7,8
+,html-button-response,102,265884,0.0-102.0,1112.8,,,,1,,,
+,html-keyboard-response,103,266888,0.0-103.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,104,267392,0.0-104.0,null,stimuli/images_hvm10/im121.png,,,null,121,8,6
+,html-button-response,105,268327,0.0-105.0,932.8,,,,1,,,
+,html-keyboard-response,106,269336,0.0-106.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,107,269847,0.0-107.0,null,stimuli/images_hvm10/im71.png,,,null,71,6,3
+,html-button-response,108,270708,0.0-108.0,859.4000001,,,,1,,,
+,html-keyboard-response,109,271717,0.0-109.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,110,272233,0.0-110.0,null,stimuli/images_hvm10/im139.png,,,null,139,0,6
+,html-button-response,111,273274,0.0-111.0,1037.3,,,,1,,,
+,html-keyboard-response,112,274283,0.0-112.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,113,274788,0.0-113.0,null,stimuli/images_hvm10/im48.png,,,null,48,7,2
+,html-button-response,114,276650,0.0-114.0,1861.3,,,,1,,,
+,html-keyboard-response,115,277660,0.0-115.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,116,278174,0.0-116.0,null,stimuli/images_hvm10/im187.png,,,null,187,6,9
+,html-button-response,117,280410,0.0-117.0,2233.6,,,,1,,,
+,html-keyboard-response,118,281422,0.0-118.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,119,281936,0.0-119.0,null,stimuli/images_hvm10/im80.png,,,null,80,4,1
+,html-button-response,120,282768,0.0-120.0,828.6999999,,,,0,,,
+,html-keyboard-response,121,283775,0.0-121.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,122,284278,0.0-122.0,null,stimuli/images_hvm10/im4.png,,,null,4,0,6
+,html-button-response,123,285073,0.0-123.0,791.9000001,,,,0,,,
+,html-keyboard-response,124,286087,0.0-124.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,125,286600,0.0-125.0,null,stimuli/images_hvm10/im39.png,,,null,39,1,6
+,html-button-response,126,288590,0.0-126.0,1987.4,,,,0,,,
+,html-keyboard-response,127,289592,0.0-127.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,128,290099,0.0-128.0,null,stimuli/images_hvm10/im61.png,,,null,61,3,0
+,html-button-response,129,290881,0.0-129.0,780.2,,,,0,,,
+,html-keyboard-response,130,291888,0.0-130.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,131,292404,0.0-131.0,null,stimuli/images_hvm10/im153.png,,,null,153,7,0
+,html-button-response,132,294353,0.0-132.0,1946.3,,,,0,,,
+,html-keyboard-response,133,295363,0.0-133.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,134,295875,0.0-134.0,null,stimuli/images_hvm10/im91.png,,,null,91,6,4
+,html-button-response,135,296984,0.0-135.0,1107.4,,,,1,,,
+,html-keyboard-response,136,297991,0.0-136.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,137,298505,0.0-137.0,null,stimuli/images_hvm10/im73.png,,,null,73,0,3
+,html-button-response,138,299369,0.0-138.0,860.8,,,,1,,,
+,html-keyboard-response,139,300377,0.0-139.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,140,300881,0.0-140.0,null,stimuli/images_hvm10/im103.png,,,null,103,5,8
+,html-button-response,141,301710,0.0-141.0,827.1,,,,0,,,
+,html-keyboard-response,142,302716,0.0-142.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,143,303230,0.0-143.0,null,stimuli/images_hvm10/im54.png,,,null,54,2,6
+,html-button-response,144,304075,0.0-144.0,842.7,,,,0,,,
+,html-keyboard-response,145,305080,0.0-145.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,146,305597,0.0-146.0,null,stimuli/images_hvm10/im143.png,,,null,143,7,2
+,html-button-response,147,306492,0.0-147.0,892.5,,,,0,,,
+,html-keyboard-response,148,307497,0.0-148.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,149,308013,0.0-149.0,null,stimuli/images_hvm10/im164.png,,,null,164,6,8
+,html-button-response,150,308747,0.0-150.0,730.4000001,,,,1,,,
+,html-keyboard-response,151,309761,0.0-151.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,152,310273,0.0-152.0,null,stimuli/images_hvm10/im53.png,,,null,53,0,2
+,html-button-response,153,311011,0.0-153.0,736.9,,,,1,,,
+,html-keyboard-response,154,312020,0.0-154.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,155,312532,0.0-155.0,null,stimuli/images_hvm10/im152.png,,,null,152,9,7
+,html-button-response,156,313492,0.0-156.0,956.6999999,,,,1,,,
+,html-keyboard-response,157,314498,0.0-157.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,158,315013,0.0-158.0,null,stimuli/images_hvm10/im41.png,,,null,41,2,4
+,html-button-response,159,315802,0.0-159.0,784.9000001,,,,0,,,
+,html-keyboard-response,160,316804,0.0-160.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,161,317315,0.0-161.0,null,stimuli/images_hvm10/im82.png,,,null,82,4,0
+,html-button-response,162,318404,0.0-162.0,1087.2,,,,1,,,
+,html-keyboard-response,163,319406,0.0-163.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,164,319909,0.0-164.0,null,stimuli/images_hvm10/im30.png,,,null,30,1,4
+,html-button-response,165,320658,0.0-165.0,745.9,,,,0,,,
+,html-keyboard-response,166,321668,0.0-166.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,167,322179,0.0-167.0,null,stimuli/images_hvm10/im182.png,,,null,182,9,5
+,html-button-response,168,323024,0.0-168.0,842.4,,,,0,,,
+,html-keyboard-response,169,324040,0.0-169.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,170,324557,0.0-170.0,null,stimuli/images_hvm10/im168.png,,,null,168,4,8
+,html-button-response,171,325488,0.0-171.0,929.3000001,,,,1,,,
+,html-keyboard-response,172,326502,0.0-172.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,173,327020,0.0-173.0,null,stimuli/images_hvm10/im117.png,,,null,117,0,5
+,html-button-response,174,327697,0.0-174.0,675.4,,,,1,,,
+,html-keyboard-response,175,328707,0.0-175.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,176,329210,0.0-176.0,null,stimuli/images_hvm10/im81.png,,,null,81,7,4
+,html-button-response,177,330081,0.0-177.0,868.5,,,,1,,,
+,html-keyboard-response,178,331083,0.0-178.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,179,331602,0.0-179.0,null,stimuli/images_hvm10/im32.png,,,null,32,4,1
+,html-button-response,180,332456,0.0-180.0,850.9,,,,1,,,
+,html-keyboard-response,181,333462,0.0-181.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,182,333979,0.0-182.0,null,stimuli/images_hvm10/im12.png,,,null,12,0,7
+,html-button-response,183,334653,0.0-183.0,670.9,,,,0,,,
+,html-keyboard-response,184,335666,0.0-184.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,185,336182,0.0-185.0,null,stimuli/images_hvm10/im97.png,,,null,97,9,4
+,html-button-response,186,336799,0.0-186.0,614.6,,,,1,,,
+,html-keyboard-response,187,337804,0.0-187.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,188,338308,0.0-188.0,null,stimuli/images_hvm10/im43.png,,,null,43,2,8
+,html-button-response,189,339224,0.0-189.0,913.3000001,,,,0,,,
+,html-keyboard-response,190,340234,0.0-190.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,191,340749,0.0-191.0,null,stimuli/images_hvm10/im28.png,,,null,28,4,1
+,html-button-response,192,341474,0.0-192.0,722,,,,1,,,
+,html-keyboard-response,193,342482,0.0-193.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,194,342998,0.0-194.0,null,stimuli/images_hvm10/im62.png,,,null,62,5,3
+,html-button-response,195,343905,0.0-195.0,904.8,,,,1,,,
+,html-keyboard-response,196,344907,0.0-196.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,197,345414,0.0-197.0,null,stimuli/images_hvm10/im151.png,,,null,151,7,1
+,html-button-response,198,346178,0.0-198.0,761.9,,,,0,,,
+,html-keyboard-response,199,347188,0.0-199.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,200,347704,0.0-200.0,null,stimuli/images_hvm10/im155.png,,,null,155,9,7
+,html-button-response,201,348480,0.0-201.0,772.8,,,,1,,,
+,html-keyboard-response,202,349492,0.0-202.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,203,350009,0.0-203.0,null,stimuli/images_hvm10/im57.png,,,null,57,3,2
+,html-button-response,204,351811,0.0-204.0,1799.1,,,,1,,,
+,html-keyboard-response,205,352813,0.0-205.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,206,353324,0.0-206.0,null,stimuli/images_hvm10/im185.png,,,null,185,9,2
+,html-button-response,207,354222,0.0-207.0,896.3,,,,0,,,
+,html-keyboard-response,208,355225,0.0-208.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,209,355727,0.0-209.0,null,stimuli/images_hvm10/im65.png,,,null,65,0,3
+,html-button-response,210,356454,0.0-210.0,726.2,,,,1,,,
+,html-keyboard-response,211,357466,0.0-211.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,212,357982,0.0-212.0,null,stimuli/images_hvm10/im105.png,,,null,105,3,5
+,html-button-response,213,358738,0.0-213.0,753.9,,,,1,,,
+,html-keyboard-response,214,359739,0.0-214.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,215,360245,0.0-215.0,null,stimuli/images_hvm10/im76.png,,,null,76,4,3
+,html-button-response,216,361046,0.0-216.0,798.1999999,,,,1,,,
+,html-keyboard-response,217,362056,0.0-217.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,218,362570,0.0-218.0,null,stimuli/images_hvm10/im68.png,,,null,68,0,3
+,html-button-response,219,363168,0.0-219.0,595.3000001,,,,1,,,
+,html-keyboard-response,220,364181,0.0-220.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,221,364697,0.0-221.0,null,stimuli/images_hvm10/im59.png,,,null,59,2,6
+,html-button-response,222,365378,0.0-222.0,678.8000001,,,,0,,,
+,html-keyboard-response,223,366379,0.0-223.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,224,366891,0.0-224.0,null,stimuli/images_hvm10/im130.png,,,null,130,6,8
+,html-button-response,225,370355,0.0-225.0,3462.2,,,,1,,,
+,html-keyboard-response,226,371356,0.0-226.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,227,371858,0.0-227.0,null,stimuli/images_hvm10/im37.png,,,null,37,7,1
+,html-button-response,228,375392,0.0-228.0,3533.1,,,,0,,,
+,html-keyboard-response,229,376401,0.0-229.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,230,376914,0.0-230.0,null,stimuli/images_hvm10/im55.png,,,null,55,9,2
+,html-button-response,231,378657,0.0-231.0,1740,,,,1,,,
+,html-keyboard-response,232,379660,0.0-232.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,233,380168,0.0-233.0,null,stimuli/images_hvm10/im138.png,,,null,138,2,6
+,html-button-response,234,380878,0.0-234.0,707.1999999,,,,1,,,
+,html-keyboard-response,235,381894,0.0-235.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,236,382409,0.0-236.0,null,stimuli/images_hvm10/im51.png,,,null,51,7,2
+,html-button-response,237,383204,0.0-237.0,792.3000001,,,,1,,,
+,html-keyboard-response,238,384207,0.0-238.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,239,384723,0.0-239.0,null,stimuli/images_hvm10/im177.png,,,null,177,4,8
+,html-button-response,240,386033,0.0-240.0,1308.7,,,,1,,,
+,html-keyboard-response,241,387046,0.0-241.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,242,387562,0.0-242.0,null,stimuli/images_hvm10/im150.png,,,null,150,1,7
+,html-button-response,243,388321,0.0-243.0,755.8,,,,1,,,
+,html-keyboard-response,244,389325,0.0-244.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,245,389839,0.0-245.0,null,stimuli/images_hvm10/im181.png,,,null,181,1,9
+,html-button-response,246,390701,0.0-246.0,858.9,,,,1,,,
+,html-keyboard-response,247,391703,0.0-247.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,248,392207,0.0-248.0,null,stimuli/images_hvm10/im197.png,,,null,197,9,3
+,html-button-response,249,393337,0.0-249.0,1128.1,,,,0,,,
+,html-keyboard-response,250,394339,0.0-250.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,251,394843,0.0-251.0,null,stimuli/images_hvm10/im178.png,,,null,178,1,8
+,html-button-response,252,395715,0.0-252.0,869.5,,,,1,,,
+,html-keyboard-response,253,396717,0.0-253.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,254,397231,0.0-254.0,null,stimuli/images_hvm10/im179.png,,,null,179,1,8
+,html-button-response,255,399983,0.0-255.0,2749.2,,,,0,,,
+,html-keyboard-response,256,400992,0.0-256.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,257,401508,0.0-257.0,null,stimuli/images_hvm10/im122.png,,,null,122,0,6
+,html-button-response,258,402414,0.0-258.0,903.9,,,,1,,,
+,html-keyboard-response,259,403416,0.0-259.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,260,403921,0.0-260.0,null,stimuli/images_hvm10/im175.png,,,null,175,8,4
+,html-button-response,261,406365,0.0-261.0,2441.6,,,,1,,,
+,html-keyboard-response,262,407367,0.0-262.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,263,407872,0.0-263.0,null,stimuli/images_hvm10/im106.png,,,null,106,3,5
+,html-button-response,264,408703,0.0-264.0,828.6999999,,,,1,,,
+,html-keyboard-response,265,409705,0.0-265.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,266,410210,0.0-266.0,null,stimuli/images_hvm10/im111.png,,,null,111,0,5
+,html-button-response,267,411057,0.0-267.0,844.1,,,,1,,,
+,html-keyboard-response,268,412063,0.0-268.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,269,412574,0.0-269.0,null,stimuli/images_hvm10/im5.png,,,null,5,0,1
+,html-button-response,270,413658,0.0-270.0,1080.2,,,,0,,,
+,html-keyboard-response,271,414667,0.0-271.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,272,415180,0.0-272.0,null,stimuli/images_hvm10/im159.png,,,null,159,1,7
+,html-button-response,273,416217,0.0-273.0,1033.7,,,,1,,,
+,html-keyboard-response,274,417224,0.0-274.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,275,417737,0.0-275.0,null,stimuli/images_hvm10/im86.png,,,null,86,9,4
+,html-button-response,276,421712,0.0-276.0,3973.7,,,,1,,,
+,html-keyboard-response,277,422715,0.0-277.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,278,423228,0.0-278.0,null,stimuli/images_hvm10/im160.png,,,null,160,8,6
+,html-button-response,279,424734,0.0-279.0,1503.4,,,,0,,,
+,html-keyboard-response,280,425736,0.0-280.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,281,426249,0.0-281.0,null,stimuli/images_hvm10/im108.png,,,null,108,7,5
+,html-button-response,282,429433,0.0-282.0,3180.7,,,,1,,,
+,html-keyboard-response,283,430434,0.0-283.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,284,430941,0.0-284.0,null,stimuli/images_hvm10/im129.png,,,null,129,6,2
+,html-button-response,285,431781,0.0-285.0,838.4000001,,,,0,,,
+,html-keyboard-response,286,432784,0.0-286.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,287,433289,0.0-287.0,null,stimuli/images_hvm10/im17.png,,,null,17,0,3
+,html-button-response,288,434040,0.0-288.0,748.6,,,,0,,,
+,html-keyboard-response,289,435045,0.0-289.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,290,435559,0.0-290.0,null,stimuli/images_hvm10/im42.png,,,null,42,2,4
+,html-button-response,291,436868,0.0-291.0,1307.5,,,,0,,,
+,html-keyboard-response,292,437871,0.0-292.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,293,438381,0.0-293.0,null,stimuli/images_hvm10/im33.png,,,null,33,1,4
+,html-button-response,294,439198,0.0-294.0,813.9000001,,,,0,,,
+,html-keyboard-response,295,440204,0.0-295.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,296,440717,0.0-296.0,null,stimuli/images_hvm10/im184.png,,,null,184,9,5
+,html-button-response,297,441533,0.0-297.0,812.2,,,,0,,,
+,html-keyboard-response,298,442538,0.0-298.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,299,443055,0.0-299.0,null,stimuli/images_hvm10/im127.png,,,null,127,7,6
+,html-button-response,300,445555,0.0-300.0,2497.7,,,,1,,,
+,html-keyboard-response,301,446557,0.0-301.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,302,447064,0.0-302.0,null,stimuli/images_hvm10/im46.png,,,null,46,6,2
+,html-button-response,303,448586,0.0-303.0,1518.7,,,,1,,,
+,html-keyboard-response,304,449588,0.0-304.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,305,450093,0.0-305.0,null,stimuli/images_hvm10/im67.png,,,null,67,3,5
+,html-button-response,306,450941,0.0-306.0,844.5,,,,0,,,
+,html-keyboard-response,307,451946,0.0-307.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,308,452449,0.0-308.0,null,stimuli/images_hvm10/im7.png,,,null,7,0,2
+,html-button-response,309,453510,0.0-309.0,1059.1,,,,0,,,
+,html-keyboard-response,310,454513,0.0-310.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,311,455028,0.0-311.0,null,stimuli/images_hvm10/im133.png,,,null,133,8,6
+,html-button-response,312,456067,0.0-312.0,1036.2,,,,1,,,
+,html-keyboard-response,313,457084,0.0-313.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,314,457594,0.0-314.0,null,stimuli/images_hvm10/im132.png,,,null,132,4,6
+,html-button-response,315,458714,0.0-315.0,1117.4,,,,1,,,
+,html-keyboard-response,316,459716,0.0-316.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,317,460232,0.0-317.0,null,stimuli/images_hvm10/im52.png,,,null,52,2,5
+,html-button-response,318,461194,0.0-318.0,960.7,,,,1,,,
+,html-keyboard-response,319,462201,0.0-319.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,320,462704,0.0-320.0,null,stimuli/images_hvm10/im84.png,,,null,84,5,4
+,html-button-response,321,464545,0.0-321.0,1839.3,,,,1,,,
+,html-keyboard-response,322,465547,0.0-322.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,323,466050,0.0-323.0,null,stimuli/images_hvm10/im136.png,,,null,136,5,6
+,html-button-response,324,467133,0.0-324.0,1080.3,,,,1,,,
+,html-keyboard-response,325,468141,0.0-325.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,326,468657,0.0-326.0,null,stimuli/images_hvm10/im35.png,,,null,35,1,5
+,html-button-response,327,469569,0.0-327.0,910.2,,,,0,,,
+,html-keyboard-response,328,470576,0.0-328.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,329,471090,0.0-329.0,null,stimuli/images_hvm10/im75.png,,,null,75,3,1
+,html-button-response,330,472017,0.0-330.0,924,,,,0,,,
+,html-keyboard-response,331,473022,0.0-331.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,332,473525,0.0-332.0,null,stimuli/images_hvm10/im109.png,,,null,109,5,3
+,html-button-response,333,474557,0.0-333.0,1029.7,,,,0,,,
+,html-keyboard-response,334,475559,0.0-334.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,335,476065,0.0-335.0,null,stimuli/images_hvm10/im96.png,,,null,96,4,6
+,html-button-response,336,477102,0.0-336.0,1034.6,,,,0,,,
+,html-keyboard-response,337,478107,0.0-337.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,338,478623,0.0-338.0,null,stimuli/images_hvm10/im47.png,,,null,47,0,2
+,html-button-response,339,479778,0.0-339.0,1153.7,,,,0,,,
+,html-keyboard-response,340,480785,0.0-340.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,341,481299,0.0-341.0,null,stimuli/images_hvm10/im95.png,,,null,95,0,4
+,html-button-response,342,482243,0.0-342.0,941,,,,0,,,
+,html-keyboard-response,343,483245,0.0-343.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,344,483762,0.0-344.0,null,stimuli/images_hvm10/im186.png,,,null,186,1,9
+,html-button-response,345,484826,0.0-345.0,1061.6,,,,1,,,
+,html-keyboard-response,346,485832,0.0-346.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,347,486345,0.0-347.0,null,stimuli/images_hvm10/im87.png,,,null,87,4,5
+,html-button-response,348,487675,0.0-348.0,1327.8,,,,0,,,
+,html-keyboard-response,349,488684,0.0-349.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,350,489195,0.0-350.0,null,stimuli/images_hvm10/im140.png,,,null,140,7,3
+,html-button-response,351,490172,0.0-351.0,974.2,,,,0,,,
+,html-keyboard-response,352,491182,0.0-352.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,353,491697,0.0-353.0,null,stimuli/images_hvm10/im158.png,,,null,158,3,7
+,html-button-response,354,492714,0.0-354.0,1015.1,,,,1,,,
+,html-keyboard-response,355,493734,0.0-355.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,356,494246,0.0-356.0,null,stimuli/images_hvm10/im24.png,,,null,24,1,7
+,html-button-response,357,495359,0.0-357.0,1110,,,,0,,,
+,html-keyboard-response,358,496371,0.0-358.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,359,496886,0.0-359.0,null,stimuli/images_hvm10/im123.png,,,null,123,6,8
+,html-button-response,360,497855,0.0-360.0,966.4,,,,0,,,
+,html-keyboard-response,361,498864,0.0-361.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,362,499371,0.0-362.0,null,stimuli/images_hvm10/im191.png,,,null,191,7,9
+,html-button-response,363,500242,0.0-363.0,869.4,,,,1,,,
+,html-keyboard-response,364,501246,0.0-364.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,365,501759,0.0-365.0,null,stimuli/images_hvm10/im116.png,,,null,116,5,8
+,html-button-response,366,502569,0.0-366.0,806.5,,,,0,,,
+,html-keyboard-response,367,503584,0.0-367.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,368,504108,0.0-368.0,null,stimuli/images_hvm10/im88.png,,,null,88,4,1
+,html-button-response,369,505291,0.0-369.0,1180.1,,,,1,,,
+,html-keyboard-response,370,506309,0.0-370.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,371,506833,0.0-371.0,null,stimuli/images_hvm10/im173.png,,,null,173,6,8
+,html-button-response,372,507657,0.0-372.0,820.9,,,,1,,,
+,html-keyboard-response,373,508672,0.0-373.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,374,509189,0.0-374.0,null,stimuli/images_hvm10/im18.png,,,null,18,9,0
+,html-button-response,375,510001,0.0-375.0,808.8,,,,1,,,
+,html-keyboard-response,376,511009,0.0-376.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,377,511527,0.0-377.0,null,stimuli/images_hvm10/im27.png,,,null,27,3,1
+,html-button-response,378,512363,0.0-378.0,834,,,,1,,,
+,html-keyboard-response,379,513377,0.0-379.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,380,513885,0.0-380.0,null,stimuli/images_hvm10/im141.png,,,null,141,7,3
+,html-button-response,381,514708,0.0-381.0,820.5,,,,0,,,
+,html-keyboard-response,382,515717,0.0-382.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,383,516226,0.0-383.0,null,stimuli/images_hvm10/im93.png,,,null,93,3,4
+,html-button-response,384,517314,0.0-384.0,1085.9,,,,1,,,
+,html-keyboard-response,385,518317,0.0-385.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,386,518834,0.0-386.0,null,stimuli/images_hvm10/im83.png,,,null,83,4,5
+,html-button-response,387,519847,0.0-387.0,1009.5,,,,0,,,
+,html-keyboard-response,388,520859,0.0-388.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,389,521377,0.0-389.0,null,stimuli/images_hvm10/im94.png,,,null,94,4,7
+,html-button-response,390,522229,0.0-390.0,849.3,,,,0,,,
+,html-keyboard-response,391,523249,0.0-391.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,392,523765,0.0-392.0,null,stimuli/images_hvm10/im156.png,,,null,156,7,9
+,html-button-response,393,524731,0.0-393.0,963.8,,,,0,,,
+,html-keyboard-response,394,525735,0.0-394.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,395,526240,0.0-395.0,null,stimuli/images_hvm10/im16.png,,,null,16,1,0
+,html-button-response,396,527141,0.0-396.0,898.5,,,,1,,,
+,html-keyboard-response,397,528148,0.0-397.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,398,528663,0.0-398.0,null,stimuli/images_hvm10/im134.png,,,null,134,6,0
+,html-button-response,399,531273,0.0-399.0,2606.3,,,,0,,,
+,html-keyboard-response,400,532277,0.0-400.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,401,532796,0.0-401.0,null,stimuli/images_hvm10/im125.png,,,null,125,8,6
+,html-button-response,402,533947,0.0-402.0,1148.3,,,,1,,,
+,html-keyboard-response,403,534957,0.0-403.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,404,535469,0.0-404.0,null,stimuli/images_hvm10/im101.png,,,null,101,7,5
+,html-button-response,405,536422,0.0-405.0,948.6,,,,1,,,
+,html-keyboard-response,406,537435,0.0-406.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,407,537951,0.0-407.0,null,stimuli/images_hvm10/im166.png,,,null,166,8,5
+,html-button-response,408,538864,0.0-408.0,909.9,,,,0,,,
+,html-keyboard-response,409,539870,0.0-409.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,410,540385,0.0-410.0,null,stimuli/images_hvm10/im31.png,,,null,31,1,5
+,html-button-response,411,541323,0.0-411.0,935.1,,,,0,,,
+,html-keyboard-response,412,542331,0.0-412.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,413,542845,0.0-413.0,null,stimuli/images_hvm10/im157.png,,,null,157,3,7
+,html-button-response,414,543746,0.0-414.0,897.8000001,,,,1,,,
+,html-keyboard-response,415,544751,0.0-415.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,416,545267,0.0-416.0,null,stimuli/images_hvm10/im60.png,,,null,60,3,5
+,html-button-response,417,546044,0.0-417.0,774.2,,,,0,,,
+,html-keyboard-response,418,547049,0.0-418.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,419,547565,0.0-419.0,null,stimuli/images_hvm10/im10.png,,,null,10,0,8
+,html-button-response,420,548491,0.0-420.0,922.9,,,,0,,,
+,html-keyboard-response,421,549502,0.0-421.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,422,550020,0.0-422.0,null,stimuli/images_hvm10/im22.png,,,null,22,0,1
+,html-button-response,423,551226,0.0-423.0,1202.1,,,,1,,,
+,html-keyboard-response,424,552233,0.0-424.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,425,552747,0.0-425.0,null,stimuli/images_hvm10/im36.png,,,null,36,1,8
+,html-button-response,426,553690,0.0-426.0,939.3,,,,0,,,
+,html-keyboard-response,427,554698,0.0-427.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,428,555212,0.0-428.0,null,stimuli/images_hvm10/im78.png,,,null,78,3,6
+,html-button-response,429,556322,0.0-429.0,1107,,,,0,,,
+,html-keyboard-response,430,557327,0.0-430.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,431,557841,0.0-431.0,null,stimuli/images_hvm10/im119.png,,,null,119,5,3
+,html-button-response,432,558757,0.0-432.0,913.2,,,,0,,,
+,html-keyboard-response,433,559759,0.0-433.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,434,560276,0.0-434.0,null,stimuli/images_hvm10/im63.png,,,null,63,0,3
+,html-button-response,435,561212,0.0-435.0,933.8,,,,1,,,
+,html-keyboard-response,436,562222,0.0-436.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,437,562730,0.0-437.0,null,stimuli/images_hvm10/im145.png,,,null,145,1,7
+,html-button-response,438,563658,0.0-438.0,927.1,,,,1,,,
+,html-keyboard-response,439,564666,0.0-439.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,440,565169,0.0-440.0,null,stimuli/images_hvm10/im144.png,,,null,144,1,7
+,html-button-response,441,565911,0.0-441.0,739.7,,,,1,,,
+,html-keyboard-response,442,566917,0.0-442.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,443,567430,0.0-443.0,null,stimuli/images_hvm10/im3.png,,,null,3,0,2
+,html-button-response,444,568286,0.0-444.0,854.1999999,,,,0,,,
+,html-keyboard-response,445,569293,0.0-445.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,446,569805,0.0-446.0,null,stimuli/images_hvm10/im110.png,,,null,110,2,5
+,html-button-response,447,570669,0.0-447.0,858.6999999,,,,1,,,
+,html-keyboard-response,448,571675,0.0-448.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,449,572192,0.0-449.0,null,stimuli/images_hvm10/im148.png,,,null,148,0,7
+,html-button-response,450,573145,0.0-450.0,950.5,,,,1,,,
+,html-keyboard-response,451,574159,0.0-451.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,452,574676,0.0-452.0,null,stimuli/images_hvm10/im66.png,,,null,66,7,3
+,html-button-response,453,575568,0.0-453.0,889.2,,,,1,,,
+,html-keyboard-response,454,576579,0.0-454.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,455,577092,0.0-455.0,null,stimuli/images_hvm10/im69.png,,,null,69,3,8
+,html-button-response,456,578110,0.0-456.0,1017,,,,0,,,
+,html-keyboard-response,457,579113,0.0-457.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,458,579630,0.0-458.0,null,stimuli/images_hvm10/im72.png,,,null,72,1,3
+,html-button-response,459,580600,0.0-459.0,968,,,,1,,,
+,html-keyboard-response,460,581608,0.0-460.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,461,582124,0.0-461.0,null,stimuli/images_hvm10/im92.png,,,null,92,4,5
+,html-button-response,462,583021,0.0-462.0,894.6999999,,,,0,,,
+,html-keyboard-response,463,584027,0.0-463.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,464,584541,0.0-464.0,null,stimuli/images_hvm10/im137.png,,,null,137,3,6
+,html-button-response,465,587820,0.0-465.0,3277.1,,,,0,,,
+,html-keyboard-response,466,588824,0.0-466.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,467,589338,0.0-467.0,null,stimuli/images_hvm10/im49.png,,,null,49,5,2
+,html-button-response,468,591934,0.0-468.0,2593.5,,,,0,,,
+,html-keyboard-response,469,592941,0.0-469.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,470,593454,0.0-470.0,null,stimuli/images_hvm10/im2.png,,,null,2,0,8
+,html-button-response,471,594397,0.0-471.0,939.8000001,,,,0,,,
+,html-keyboard-response,472,595408,0.0-472.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,473,595913,0.0-473.0,null,stimuli/images_hvm10/im131.png,,,null,131,6,8
+,html-button-response,474,596805,0.0-474.0,888.3,,,,0,,,
+,html-keyboard-response,475,597818,0.0-475.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,476,598337,0.0-476.0,null,stimuli/images_hvm10/im40.png,,,null,40,2,7
+,html-button-response,477,599210,0.0-477.0,869.7,,,,0,,,
+,html-keyboard-response,478,600226,0.0-478.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,479,600729,0.0-479.0,null,stimuli/images_hvm10/im118.png,,,null,118,5,1
+,html-button-response,480,601824,0.0-480.0,1091.8,,,,0,,,
+,html-keyboard-response,481,602836,0.0-481.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,482,603355,0.0-482.0,null,stimuli/images_hvm10/im44.png,,,null,44,2,4
+,html-button-response,483,604192,0.0-483.0,833.2,,,,0,,,
+,html-keyboard-response,484,605208,0.0-484.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,485,605719,0.0-485.0,null,stimuli/images_hvm10/im34.png,,,null,34,3,1
+,html-button-response,486,606708,0.0-486.0,987.6,,,,1,,,
+,html-keyboard-response,487,607724,0.0-487.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,488,608231,0.0-488.0,null,stimuli/images_hvm10/im102.png,,,null,102,5,9
+,html-button-response,489,609050,0.0-489.0,816.1,,,,0,,,
+,html-keyboard-response,490,610058,0.0-490.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,491,610567,0.0-491.0,null,stimuli/images_hvm10/im189.png,,,null,189,9,3
+,html-button-response,492,611433,0.0-492.0,861.1999999,,,,0,,,
+,html-keyboard-response,493,612440,0.0-493.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,494,612960,0.0-494.0,null,stimuli/images_hvm10/im162.png,,,null,162,4,8
+,html-button-response,495,613875,0.0-495.0,912.9000001,,,,1,,,
+,html-keyboard-response,496,614882,0.0-496.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,497,615397,0.0-497.0,null,stimuli/images_hvm10/im79.png,,,null,79,7,3
+,html-button-response,498,616372,0.0-498.0,970.8000001,,,,1,,,
+,html-keyboard-response,499,617378,0.0-499.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,500,617882,0.0-500.0,null,stimuli/images_hvm10/im190.png,,,null,190,5,9
+,html-button-response,501,618653,0.0-501.0,768,,,,1,,,
+,html-keyboard-response,502,619658,0.0-502.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,503,620172,0.0-503.0,null,stimuli/images_hvm10/im74.png,,,null,74,1,3
+,html-button-response,504,621191,0.0-504.0,1013.5,,,,1,,,
+,html-keyboard-response,505,622201,0.0-505.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,506,622705,0.0-506.0,null,stimuli/images_hvm10/im98.png,,,null,98,1,4
+,html-button-response,507,626072,0.0-507.0,3363.3,,,,0,,,
+,html-keyboard-response,508,627078,0.0-508.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,509,627594,0.0-509.0,null,stimuli/images_hvm10/im64.png,,,null,64,6,3
+,html-button-response,510,628522,0.0-510.0,925,,,,1,,,
+,html-keyboard-response,511,629527,0.0-511.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,512,630041,0.0-512.0,null,stimuli/images_hvm10/im192.png,,,null,192,9,6
+,html-button-response,513,630906,0.0-513.0,860.9,,,,0,,,
+,html-keyboard-response,514,631919,0.0-514.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,515,632429,0.0-515.0,null,stimuli/images_hvm10/im198.png,,,null,198,7,9
+,html-button-response,516,633384,0.0-516.0,952.9000001,,,,1,,,
+,html-keyboard-response,517,634393,0.0-517.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,518,634898,0.0-518.0,null,stimuli/images_hvm10/im6.png,,,null,6,0,8
+,html-button-response,519,635849,0.0-519.0,947.8000001,,,,0,,,
+,html-keyboard-response,520,636858,0.0-520.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,521,637372,0.0-521.0,null,stimuli/images_hvm10/im195.png,,,null,195,6,9
+,html-button-response,522,638247,0.0-522.0,872.7,,,,1,,,
+,html-keyboard-response,523,639259,0.0-523.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,524,639774,0.0-524.0,null,stimuli/images_hvm10/im77.png,,,null,77,6,3
+,html-button-response,525,640692,0.0-525.0,914.7,,,,1,,,
+,html-keyboard-response,526,641698,0.0-526.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,527,642215,0.0-527.0,null,stimuli/images_hvm10/im11.png,,,null,11,2,0
+,html-button-response,528,644471,0.0-528.0,2253.1,,,,1,,,
+,html-keyboard-response,529,645484,0.0-529.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,530,646000,0.0-530.0,null,stimuli/images_hvm10/im180.png,,,null,180,9,4
+,html-button-response,531,646884,0.0-531.0,880.8000001,,,,0,,,
+,html-keyboard-response,532,647890,0.0-532.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,533,648395,0.0-533.0,null,stimuli/images_hvm10/im26.png,,,null,26,1,3
+,html-button-response,534,650976,0.0-534.0,2577.4,,,,1,,,
+,html-keyboard-response,535,651986,0.0-535.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,536,652501,0.0-536.0,null,stimuli/images_hvm10/im20.png,,,null,20,1,2
+,html-button-response,537,653393,0.0-537.0,887.9000001,,,,0,,,
+,html-keyboard-response,538,654401,0.0-538.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,539,654904,0.0-539.0,null,stimuli/images_hvm10/im193.png,,,null,193,5,9
+,html-button-response,540,655791,0.0-540.0,883.5,,,,1,,,
+,html-keyboard-response,541,656801,0.0-541.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,542,657319,0.0-542.0,null,stimuli/images_hvm10/im163.png,,,null,163,4,8
+,html-button-response,543,658120,0.0-543.0,797.8,,,,1,,,
+,html-keyboard-response,544,659131,0.0-544.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,545,659645,0.0-545.0,null,stimuli/images_hvm10/im23.png,,,null,23,1,6
+,html-button-response,546,660506,0.0-546.0,857.9,,,,0,,,
+,html-keyboard-response,547,661525,0.0-547.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,548,662041,0.0-548.0,null,stimuli/images_hvm10/im15.png,,,null,15,6,0
+,html-button-response,549,663018,0.0-549.0,973.6,,,,1,,,
+,html-keyboard-response,550,664024,0.0-550.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,551,664540,0.0-551.0,null,stimuli/images_hvm10/im19.png,,,null,19,0,6
+,html-button-response,552,665510,0.0-552.0,966.8,,,,0,,,
+,html-keyboard-response,553,666521,0.0-553.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,554,667036,0.0-554.0,null,stimuli/images_hvm10/im169.png,,,null,169,0,8
+,html-button-response,555,668007,0.0-555.0,967.8,,,,0,,,
+,html-keyboard-response,556,669015,0.0-556.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,557,669534,0.0-557.0,null,stimuli/images_hvm10/im45.png,,,null,45,2,4
+,html-button-response,558,670745,0.0-558.0,1209.2,,,,1,,,
+,html-keyboard-response,559,671754,0.0-559.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,560,672266,0.0-560.0,null,stimuli/images_hvm10/im167.png,,,null,167,8,3
+,html-button-response,561,673156,0.0-561.0,888.8,,,,0,,,
+,html-keyboard-response,562,674167,0.0-562.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,563,674680,0.0-563.0,null,stimuli/images_hvm10/im9.png,,,null,9,0,9
+,html-button-response,564,675581,0.0-564.0,898.6,,,,0,,,
+,html-keyboard-response,565,676587,0.0-565.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,566,677100,0.0-566.0,null,stimuli/images_hvm10/im104.png,,,null,104,7,5
+,html-button-response,567,679017,0.0-567.0,1915.7,,,,0,,,
+,html-keyboard-response,568,680027,0.0-568.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,569,680541,0.0-569.0,null,stimuli/images_hvm10/im183.png,,,null,183,9,2
+,html-button-response,570,681413,0.0-570.0,869.9,,,,0,,,
+,html-keyboard-response,571,682431,0.0-571.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,572,682946,0.0-572.0,null,stimuli/images_hvm10/im135.png,,,null,135,6,0
+,html-button-response,573,683986,0.0-573.0,1037.2,,,,0,,,
+,html-keyboard-response,574,684997,0.0-574.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,575,685510,0.0-575.0,null,stimuli/images_hvm10/im29.png,,,null,29,1,5
+,html-button-response,576,686935,0.0-576.0,1422.2,,,,0,,,
+,html-keyboard-response,577,687945,0.0-577.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,578,688448,0.0-578.0,null,stimuli/images_hvm10/im112.png,,,null,112,7,5
+,html-button-response,579,689400,0.0-579.0,950.1999999,,,,1,,,
+,html-keyboard-response,580,690424,0.0-580.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,581,690941,0.0-581.0,null,stimuli/images_hvm10/im115.png,,,null,115,5,6
+,html-button-response,582,692699,0.0-582.0,1755.7,,,,0,,,
+,html-keyboard-response,583,693701,0.0-583.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,584,694204,0.0-584.0,null,stimuli/images_hvm10/im120.png,,,null,120,6,4
+,html-button-response,585,695157,0.0-585.0,950.4,,,,0,,,
+,html-keyboard-response,586,696160,0.0-586.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,587,696677,0.0-587.0,null,stimuli/images_hvm10/im128.png,,,null,128,6,9
+,html-button-response,588,697825,0.0-588.0,1146.3,,,,0,,,
+,html-keyboard-response,589,698839,0.0-589.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,590,699356,0.0-590.0,null,stimuli/images_hvm10/im38.png,,,null,38,1,6
+,html-button-response,591,700252,0.0-591.0,892.6,,,,0,,,
+,html-keyboard-response,592,701254,0.0-592.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,593,701759,0.0-593.0,null,stimuli/images_hvm10/im114.png,,,null,114,0,5
+,html-button-response,594,702659,0.0-594.0,897.8000001,,,,1,,,
+,html-keyboard-response,595,703667,0.0-595.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,596,704186,0.0-596.0,null,stimuli/images_hvm10/im14.png,,,null,14,3,0
+,html-button-response,597,705124,0.0-597.0,935.4,,,,1,,,
+,html-keyboard-response,598,706129,0.0-598.0,null,"<div style=""font-size:60px;"">+</div>",null,,,,,
+,image-button-response,599,706633,0.0-599.0,null,stimuli/images_hvm10/im124.png,,,null,124,2,6
+,html-button-response,600,707598,0.0-600.0,962.5,,,,1,,,
