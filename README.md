@@ -8,3 +8,5 @@ Launch Python Fundamentals: [![Binder](https://mybinder.org/badge_logo.svg)](htt
 Launch Ebbinghaus Psychophysics: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pjkohler/NRSC2200/HEAD?labpath=pphys_ebbinghaus%2Febbinghaus.ipynb)
 
 Launch Object Recognition Psychophysics: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pjkohler/NRSC2200/HEAD?labpath=pphys_object-recognition%2Fobject-recognition.ipynb)
+
+Launch functional MRI Human Connectome Project: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pjkohler/NRSC2200/HEAD?labpath=fmri%2Ffmri_hcp.ipynb)
