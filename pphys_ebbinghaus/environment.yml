@@ -1,0 +1,12 @@
+name: pphys_ebbinghaus
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - matplotlib
+  - pandas
+  - scipy
+  - pip
+  - pip:
+    - git+https://github.com/wichmann-lab/python-psignifit/zipball/master
+
