@@ -45,7 +45,7 @@ def fetch_data(project_id):
             print("fetch command failed: \n {}".format(str_to_run))
 
         # check again
-        assert check_data(project_id) < 10, "less than 10 datasets were downloaded from project {} \n".format(project_id)
+        assert check_data(project_id) > 10, "less than 10 datasets were downloaded from project {} \n".format(project_id)
     else:
         print("data already exists, not downloading")
 
