@@ -335,5 +335,5 @@ def plot_ps(info_df, fit_params, participant, annotate=False, plot_function=Fals
                         ax[t].get_xticklabels() + ax[t].get_yticklabels() + 
                         ax[t].get_legend().get_texts()):
                 item.set_fontsize(12)
-                item.set_fontname("Arial")
+                item.set_fontname("DejaVu Sans")
             
