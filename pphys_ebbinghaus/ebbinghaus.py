@@ -45,7 +45,7 @@ def fetch_data(project_id):
             print("fetch command failed: \n {}".format(str_to_run))
 
         # check again
-        assert check_data(project_id) > 10, "less than 10 datasets were downloaded from project {} \n".format(project_id)
+        assert check_data(project_id) >= 10, "less than 10 datasets were downloaded from project {} \n".format(project_id)
     else:
         print("data already exists, not downloading")
 
@@ -309,7 +309,7 @@ def plot_ps(info_df, fit_params, participant, annotate=False, plot_function=Fals
                 ax[t].set_ylim([0,1])
             if "testbigger" in data_type:
                 title_str = 'Responses'
-                ylabel_str = "test > ref"
+                ylabel_str = "test > ref (proportion)"
                 many_xx = np.linspace(20, 30)
                 if plot_function:
                     ps.psigniplot.plotPsych(cur_params[c], axisHandle=ax[t],lineColor=e_h[0].get_color(), **ps_kwargs)
@@ -325,7 +325,15 @@ def plot_ps(info_df, fit_params, participant, annotate=False, plot_function=Fals
                 ylabel_str = "RT (ms)"
             ax[t].set_xlim([19,31])  
 
-            ax[t].set_xlabel("inner test size (ref: 25)")
+            ax[t].set_xlabel("inner test size (ref: 25)", fontsize=12)
             ax[t].set_ylabel(ylabel_str)
             ax[t].title.set_text(title_str)
-            ax[t].legend()
+            ax[t].legend(frameon=False)
+            ax[t].spines['top'].set_visible(False)
+            ax[t].spines['right'].set_visible(False)
+            for item in ([ax[t].title] + [ax[t].xaxis.label, ax[t].yaxis.label] +
+                        ax[t].get_xticklabels() + ax[t].get_yticklabels() + 
+                        ax[t].get_legend().get_texts()):
+                item.set_fontsize(12)
+                item.set_fontname("Arial")
+            
