@@ -49,6 +49,12 @@ def fetch_data(project_id):
     else:
         print("data already exists, not downloading")
 
+# function for loading all data
+
+def load_complete():
+    info_df = pd.read_csv("ebbinghaus_combined.csv")
+    return info_df
+
 # function for loading the data into memory
 
 def load_data(data_dir):
@@ -225,36 +231,71 @@ def fit_ps(stim_params, fit_data, n_trials, options=dict()):
     slope = ps.getSlopePC(temp_params,.5)
     return temp_params, threshold, slope
 
-def fit_data(info_df):
-    fit_params = [ [], [] ]
-    pse_slope = [ [], [] ]
-    for d, data_type in enumerate(["same", "small"]):
-        print('Fitting psychometric functions for "{}" condition ... '.format(data_type), end='')
-        test_inner_sizes = [int(x.split("-")[-1])for x in list(info_df.columns.values) if x.startswith("testbigger-{0}-".format(data_type)) ]
-        for index, row in info_df.iterrows():
-            # same inducers
-            fit_data = [ row[x] for x in info_df.columns if x.startswith("testbigger-{0}-".format(data_type)) ]
-            n_trials = [ row[x] for x in info_df.columns if x.startswith("ntrials-{0}-".format(data_type)) ]
-            temp_params, threshold, slope = fit_ps(test_inner_sizes, fit_data, n_trials)
-            fit_params[d].append(temp_params)
-            pse_slope[d].append((threshold, slope))
-        # run fit on averages for illustration purposes
-        fit_data = [ info_df[x].mean() for x in info_df.columns if x.startswith("testbigger-{0}-".format(data_type)) ]
-        n_trials = [ int(info_df[x].mean()) for x in info_df.columns if x.startswith("ntrials-{0}-".format(data_type)) ]
+def combine_data(new_params, all_params=None, all_options=[]):
+    new_params['options']['timestamp'] = new_params['timestamp']
+    all_options.append(new_params['options'])
+    if not all_params:
+        all_params = dict()
+        new_data = True
+    else:
+        new_data = False
+    for key, value in new_params.items():
+        if isinstance(value, float):
+            if new_data:
+                all_params[key] = [value] # turn into list
+            else:
+                all_params[key].append(value)
+        elif isinstance(value, np.ndarray):
+            if new_data:
+                all_params[key] = value[..., np.newaxis]
+            else:
+                all_params[key] = np.concatenate((all_params[key], value[..., np.newaxis]), -1)
+        if isinstance(value, list):
+            if new_data:
+                all_params[key] = value
+                for c, data in enumerate(value):
+                    all_params[key][c] = data[..., np.newaxis]
+            else:
+                for c, data in enumerate(value):
+                    all_params[key][c] = np.concatenate((all_params[key][c], data[..., np.newaxis]), -1)
+    return all_params, all_options
+
+def fit_data(info_df, data_type="same", lightweight=True):
+    pse_slope = [ ]
+    print('Fitting psychometric functions for "{}" condition ... '.format(data_type), end='')
+    test_inner_sizes = [int(x.split("-")[-1])for x in list(info_df.columns.values) if x.startswith("testbigger-{0}-".format(data_type)) ]
+    for index, row in info_df.iterrows():
+        # same inducers
+        fit_data = [ row[x] for x in info_df.columns if x.startswith("testbigger-{0}-".format(data_type)) ]
+        n_trials = [ row[x] for x in info_df.columns if x.startswith("ntrials-{0}-".format(data_type)) ]
         temp_params, threshold, slope = fit_ps(test_inner_sizes, fit_data, n_trials)
-        fit_params[d].append(temp_params)
-        pse_slope[d].append((threshold, slope))
-        # assign pses to info_df
-        info_df["pse-{0}".format(data_type)] = [ x[0] for x in pse_slope[d][0:-1] ]
-        info_df["pse-{0}-avefit".format(data_type)] = [pse_slope[d][-1][0]] * info_df.shape[0]
-        info_df["slope-{0}".format(data_type)] = [ x[1] for x in pse_slope[d][0:-1] ]
-        info_df["slope-{0}-avefit".format(data_type)] = [pse_slope[d][-1][1]] * info_df.shape[0]
-        print('finished!'.format(data_type))
-    
+        pse_slope.append((threshold, slope))
+        if index == 0:
+            fit_params, fit_options = combine_data(temp_params)
+        else:
+            fit_params, fit_options = combine_data(temp_params, fit_params, fit_options)
+        temp_params = None 
+    # run fit on averages for illustration purposes
+    fit_data = [ info_df[x].mean() for x in info_df.columns if x.startswith("testbigger-{0}-".format(data_type)) ]
+    n_trials = [ int(info_df[x].mean()) for x in info_df.columns if x.startswith("ntrials-{0}-".format(data_type)) ]
+    temp_params, threshold, slope = fit_ps(test_inner_sizes, fit_data, n_trials)
+    pse_slope.append((threshold, slope))
+    fit_params, fit_options = combine_data(temp_params, fit_params, fit_options)
+    temp_params = None
+    if lightweight:
+        fit_params = []
+        fit_options = []
+    # assign pses to info_df
+    info_df["pse-{0}".format(data_type)] = [ x[0] for x in pse_slope[0:-1] ]
+    info_df["pse-{0}-avefit".format(data_type)] = [pse_slope[-1][0]] * info_df.shape[0]
+    info_df["slope-{0}".format(data_type)] = [ x[1] for x in pse_slope[0:-1] ]
+    info_df["slope-{0}-avefit".format(data_type)] = [pse_slope[-1][1]] * info_df.shape[0]
+    print('finished!'.format(data_type))
+
     # save data to a csv
     info_df.to_csv("ebbinghaus_combined.csv")
 
-    return info_df, fit_params
+    return info_df, fit_params, fit_options
 
 # function for doing plotting
 
