@@ -4,15 +4,12 @@ import pandas as pd
 import seaborn as sns
 import os
 import subprocess
-from IPython.utils import io
 import glob
 import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 from matplotlib.colors import ListedColormap
-import pprint
 import ast
-import time
-from datetime import datetime
+import warnings
+
 
 # start defining some functions
 
@@ -65,7 +62,7 @@ def load_data(data_dir, exp_n = 199, labels=['bear','elephant','person','car','d
     for e, cur_dir in enumerate(data_dir):
         file_list = glob.glob(cur_dir + "/**/*object_recognition*.csv")
         file_list.sort()
-        exp_subs = [] # list to hold the subjects in this experiment
+        sub_list = [] # list to hold the subjects in this experiment
         for file in file_list:
             # load the data
             try:
@@ -97,7 +94,7 @@ def load_data(data_dir, exp_n = 199, labels=['bear','elephant','person','car','d
                 continue
             
             # now skip if this subjects data is already in the set
-            if sub_id in exp_subs:
+            if sub_id in sub_list:
                 print(e, sub_id, "duplicate participants, skipping the second file".format(num_trials))
                 continue
             
@@ -126,7 +123,7 @@ def load_data(data_dir, exp_n = 199, labels=['bear','elephant','person','car','d
                 print(e, sub_id, "incomplete file, on {0} trials".format(num_trials))
             
             # add participant to list of subjects for this experiment
-            exp_subs.append(sub_id)
+            sub_list.append(sub_id)
             
             # start populating sub_info dict: 
             sub_info["experiment"] = e
@@ -134,8 +131,8 @@ def load_data(data_dir, exp_n = 199, labels=['bear','elephant','person','car','d
             
             # lets fetch all the relevant trial variables for each trial
             sub_info["im_no"] = valid_images; # all image numbers
-            sub_info["target"] = correct_choice; # what was the target object number?            
-            sub_info["distractor"] = [ int(np.array(i) [i != j ]) for i, j in zip(choices, correct_choice) ] # what was the distractor object number?
+            sub_info["target"] = correct_choice; # what was the target object number?  
+            sub_info["distractor"] = [ int(np.squeeze(np.array(i)[i != j])) for i, j in zip(choices, correct_choice) ] # what was the distractor object number?
             sub_info["response"] = [ i [j] for i, j in zip(choices, valid_response) ] # which object with the subject choose?
             sub_info["correct"] = [i == j for i, j in zip(sub_info["response"], sub_info["target"])]
             sub_info["rt"] = valid_rt
@@ -157,14 +154,19 @@ def load_data(data_dir, exp_n = 199, labels=['bear','elephant','person','car','d
                         conf_labels.append(labels[i] + "_vs_" + labels[j])
             sub_info["conf"] = sub_conf
             all_data.append(sub_info)
-        return(all_data, sub_info)
+        return(all_data, sub_list, conf_labels)
 
-def confusion_averages(all_data):
+def confusion_averages(all_data, reject_list=None):
     all_conf = np.array([x["conf"] for x in all_data ])
-    mean_conf = np.nanmean(all_conf, 0)
     all_corr = np.array([np.mean(x["correct"]) for x in all_data ])
+    if reject_list is None: reject_list = np.zeros((all_corr.shape[0]), dtype=bool)
+    all_corr = all_corr[~reject_list]
+    all_conf = all_conf[~reject_list, :, :]
     mean_corr = np.nanmean(all_corr)
-    return(mean_conf, mean_corr, all_corr)       
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", category=RuntimeWarning)
+        mean_conf = np.nanmean(all_conf, 0)
+    return(mean_conf, mean_corr, all_conf, all_corr)       
 
 def confusion_list(mean_conf, label_list):
     # get rid of nans and convert to list
