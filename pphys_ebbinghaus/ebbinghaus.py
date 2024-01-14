@@ -33,7 +33,6 @@ def check_data(project_id):
     
     return(num_files)
 
-
 def fetch_data(project_id):
     num_files = check_data(project_id)
     if num_files < 10:
@@ -57,7 +56,7 @@ def load_complete():
 
 # function for loading the data into memory
 
-def load_data(data_dir):
+def load_data(data_dir, grab_course = "all", grab_term = "all"):
 
     if not isinstance(data_dir, list):
         data_dir = [data_dir]
@@ -76,6 +75,15 @@ def load_data(data_dir):
 
     for e, cur_dir in enumerate(data_dir):
         file_list = glob.glob(cur_dir + "/**/psyc4260*.csv") + glob.glob(cur_dir + "/**/nrsc2200*.csv")
+        if grab_course not in ["all", "ALL", "All"]:
+            file_list = [x for x in file_list if grab_course.upper() in x.upper() ]
+        else:
+            print("grabbing data from all courses")
+        if grab_term not in ["all", "ALL", "All"]:
+            file_list = [x for x in file_list if grab_term.upper() in x.upper() ]
+        else:
+            print("grabbing data from all courses")
+        assert len(file_list) > 0, "No data found for course {} in term {}".format(grab_course.upper(), grab_term.upper())
         file_list.sort()
         exp_subs = [] # list to hold the subjects in this experiment
         for file in file_list:
@@ -129,19 +137,17 @@ def load_data(data_dir):
             sub_info["ID"] = sub_id
             
             # get course and timing for this subject
-            course = file.split('-')[0].split('/')[-1].upper()
-            
             try:
+                course = file.split('-')[0].split('/')[-1].upper()
                 dt = datetime.strptime(sub_data["recorded_at"][0], '%Y-%m-%d %H:%M:%S')
+                if dt.month < 5:
+                    sub_info["course"] = "{}_W{}".format(course, dt.year)
+                elif dt.month > 8:
+                    sub_info["course"] = "{}_F{}".format(course, dt.year)
+                else:
+                    sub_info["course"] = "{}_S{}".format(course, dt.year)
             except:
-                dt = datetime.strptime(time.ctime(os.path.getmtime(file)), '%a %b %d %H:%M:%S %Y')
-                
-            if dt.month < 5:
-                sub_info["course"] = "{}_W{}".format(course, dt.year)
-            elif dt.month > 8:
-                sub_info["course"] = "{}_F{}".format(course, dt.year)
-            else:
-                sub_info["course"] = "{}_S{}".format(course, dt.year)
+                sub_info["course"] = file.split('/')[3].upper()
 
             # Cognition.run specific error: replace strings with logicals
             sub_data = sub_data.replace("true", True)
@@ -262,6 +268,7 @@ def combine_data(new_params, all_params=None, all_options=[]):
 
 def fit_data(info_df, data_type="same", lightweight=True):
     pse_slope = [ ]
+    fit_params = [ ]
     print('Fitting psychometric functions for "{}" condition ... '.format(data_type), end='')
     test_inner_sizes = [int(x.split("-")[-1])for x in list(info_df.columns.values) if x.startswith("testbigger-{0}-".format(data_type)) ]
     for index, row in info_df.iterrows():
@@ -270,32 +277,32 @@ def fit_data(info_df, data_type="same", lightweight=True):
         n_trials = [ row[x] for x in info_df.columns if x.startswith("ntrials-{0}-".format(data_type)) ]
         temp_params, threshold, slope = fit_ps(test_inner_sizes, fit_data, n_trials)
         pse_slope.append((threshold, slope))
-        if index == 0:
-            fit_params, fit_options = combine_data(temp_params)
-        else:
-            fit_params, fit_options = combine_data(temp_params, fit_params, fit_options)
+        fit_params.append(temp_params)
+        #if index == 0:
+        #    fit_params, fit_options = combine_data(temp_params)
+        #else:
+        #    fit_params, fit_options = combine_data(temp_params, fit_params, fit_options)
         temp_params = None 
     # run fit on averages for illustration purposes
     fit_data = [ info_df[x].mean() for x in info_df.columns if x.startswith("testbigger-{0}-".format(data_type)) ]
     n_trials = [ int(info_df[x].mean()) for x in info_df.columns if x.startswith("ntrials-{0}-".format(data_type)) ]
     temp_params, threshold, slope = fit_ps(test_inner_sizes, fit_data, n_trials)
     pse_slope.append((threshold, slope))
-    fit_params, fit_options = combine_data(temp_params, fit_params, fit_options)
+    #fit_params, fit_options = combine_data(temp_params, fit_params, fit_options)
+    fit_params.append(temp_params)
     temp_params = None
     if lightweight:
         fit_params = []
-        fit_options = []
     # assign pses to info_df
     info_df["pse-{0}".format(data_type)] = [ x[0] for x in pse_slope[0:-1] ]
     info_df["pse-{0}-avefit".format(data_type)] = [pse_slope[-1][0]] * info_df.shape[0]
     info_df["slope-{0}".format(data_type)] = [ x[1] for x in pse_slope[0:-1] ]
     info_df["slope-{0}-avefit".format(data_type)] = [pse_slope[-1][1]] * info_df.shape[0]
     print('finished!'.format(data_type))
-
     # save data to a csv
     info_df.to_csv("ebbinghaus_combined.csv")
 
-    return info_df, fit_params, fit_options
+    return info_df, fit_params
 
 # function for doing plotting
 
