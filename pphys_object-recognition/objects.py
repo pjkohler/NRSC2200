@@ -46,7 +46,7 @@ def fetch_data(project_id):
 
 # function for loading the data into memory
 
-def load_data(data_dir, exp_n = 199, labels=['bear','elephant','person','car','dog','apple','chair','plane','bird','zebra']):
+def load_data(data_dir, grab_course = "all", grab_term = "all", labels=['bear','elephant','person','car','dog','apple','chair','plane','bird','zebra'], exp_n = 199):
     if not isinstance(data_dir, list):
         data_dir = [data_dir]
 
@@ -60,7 +60,18 @@ def load_data(data_dir, exp_n = 199, labels=['bear','elephant','person','car','d
     all_data = []
 
     for e, cur_dir in enumerate(data_dir):
-        file_list = glob.glob(cur_dir + "/**/*object_recognition*.csv")
+        file_list = glob.glob(cur_dir + "/**/psyc4260*.csv") + glob.glob(cur_dir + "/**/nrsc2200*.csv")
+        if grab_course not in ["all", "ALL", "All"]:
+            file_list = [x for x in file_list if grab_course.upper() in x.upper() ]
+            print("grabbing data from course {}".format(grab_course.upper()))
+        else:
+            print("grabbing data from all courses")
+        if grab_term not in ["all", "ALL", "All"]:
+            file_list = [x for x in file_list if grab_term.upper() in x.upper() ]
+            print("grabbing data from term {}".format(grab_term.upper()))
+        else:
+            print("grabbing data from all terms")
+        assert len(file_list) > 0, "No data found for course {} in term {}".format(grab_course.upper(), grab_term.upper())
         file_list.sort()
         sub_list = [] # list to hold the subjects in this experiment
         for file in file_list:
