@@ -82,7 +82,7 @@ def load_data(data_dir, grab_course = "all", grab_term = "all"):
         if grab_term not in ["all", "ALL", "All"]:
             file_list = [x for x in file_list if grab_term.upper() in x.upper() ]
         else:
-            print("grabbing data from all courses")
+            print("grabbing data from all terms")
         assert len(file_list) > 0, "No data found for course {} in term {}".format(grab_course.upper(), grab_term.upper())
         file_list.sort()
         exp_subs = [] # list to hold the subjects in this experiment
