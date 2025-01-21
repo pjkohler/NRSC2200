@@ -14,6 +14,7 @@ warnings.filterwarnings('ignore')
 
 # import package for fitting
 import psignifit as ps
+import psignifit.psigniplot as psp
 
 # start defining some functions
 
@@ -328,7 +329,7 @@ def plot_ps(info_df, fit_params, participant, annotate=False, plot_function=Fals
         cur_pse = [cur_df["pse-{0}-avefit".format(c)].to_list()[0] for c in condition_list ]
         cur_slope = [cur_df["slope-{0}-avefit".format(c)].to_list()[0] for c in condition_list ]
 
-    ps_kwargs = dict(plotData=False, showImediate=False, plotAsymptote=False)
+    ps_kwargs = dict(plot_data=False, plot_parameter=False)
     eb_kwargs = dict(linestyle='none', mfc='none', ms=8, clip_on=False)
 
     fig, ax = plt.subplots(1,2, figsize=[15,5])
@@ -360,7 +361,7 @@ def plot_ps(info_df, fit_params, participant, annotate=False, plot_function=Fals
                 ylabel_str = "test > ref (proportion)"
                 many_xx = np.linspace(20, 30)
                 if plot_function:
-                    ps.psigniplot.plotPsych(cur_params[c], axisHandle=ax[t],lineColor=e_h[0].get_color(), **ps_kwargs)
+                    psp.plot_psychometric_function(cur_params[c], ax=ax[t],line_color=e_h[0].get_color(), **ps_kwargs)
                 ax[t].plot((10, 40), (0.5, 0.5), 'k:')
                 
                 if annotate:
