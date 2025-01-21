@@ -227,14 +227,14 @@ def fit_ps(stim_params, fit_data, n_trials, options=dict()):
     fit_data = np.vstack([np.array(stim_params), np.array(fit_data)*np.array(n_trials), np.array(n_trials)])
     if not options:
         options = dict();   # initialize as an empty dictionary
-        options['sigmoidName'] = 'norm';   # choose a cumulative Gauss as the sigmoid  
-        options['expType']     = 'equalAsymptote';   # choose 2-AFC as the experiment type  
+        options['sigmoid'] = 'norm';   # choose a cumulative Gauss as the sigmoid  
+        options['experiment_type']     = 'equal asymptote';   # choose 2-AFC as the experiment type  
                                    # this sets the guessing rate to .5 (fixed) and  
                                    # fits the rest of the parameters
     with io.capture_output() as captured:
-        temp_params = ps.psignifit(fit_data.transpose(),options)
-    threshold = ps.getThreshold(temp_params,.5)[0]
-    slope = ps.getSlopePC(temp_params,.5)
+        temp_params = ps.psignifit(fit_data.transpose(), **options)
+    threshold = temp_params.parameter_estimate['threshold']
+    slope = temp_params.slope(0.5)
     return temp_params, threshold, slope
 
 def combine_data(new_params, all_params=None, all_options=[]):
@@ -284,7 +284,7 @@ def fit_data(info_df, data_type="same", lightweight=True):
         #    fit_params, fit_options = combine_data(temp_params, fit_params, fit_options)
         temp_params = None 
     # run fit on averages for illustration purposes
-    fit_data = [ info_df[x].mean() for x in info_df.columns if x.startswith("testbigger-{0}-".format(data_type)) ]
+    fit_data = [ int(info_df[x].mean()) for x in info_df.columns if x.startswith("testbigger-{0}-".format(data_type)) ]
     n_trials = [ int(info_df[x].mean()) for x in info_df.columns if x.startswith("ntrials-{0}-".format(data_type)) ]
     temp_params, threshold, slope = fit_ps(test_inner_sizes, fit_data, n_trials)
     pse_slope.append((threshold, slope))
