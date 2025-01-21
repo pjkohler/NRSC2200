@@ -285,8 +285,10 @@ def fit_data(info_df, data_type="same", lightweight=True):
         #    fit_params, fit_options = combine_data(temp_params, fit_params, fit_options)
         temp_params = None 
     # run fit on averages for illustration purposes
-    fit_data = [ info_df[x].sum() for x in info_df.columns if x.startswith("testbigger-{0}-".format(data_type)) ]
-    n_trials = [ info_df[x].sum() for x in info_df.columns if x.startswith("ntrials-{0}-".format(data_type)) ]
+    fit_data = np.array([info_df[x] for x in info_df.columns if x.startswith("testbigger-{0}-".format("small"))])
+    n_trials = np.array([info_df[x] for x in info_df.columns if x.startswith("ntrials-{0}-".format("small"))])
+    fit_data = np.sum(n_trials * fit_data, 1)
+    n_trials = np.sum(n_trials, 1)
     temp_params, threshold, slope = fit_ps(test_inner_sizes, fit_data, n_trials)
     pse_slope.append((threshold, slope))
     #fit_params, fit_options = combine_data(temp_params, fit_params, fit_options)
