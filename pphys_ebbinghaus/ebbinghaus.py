@@ -225,7 +225,7 @@ def load_data(data_dir, grab_course = "all", grab_term = "all"):
 # functions for fitting psychometric functions
 
 def fit_ps(stim_params, fit_data, n_trials, options=dict()):
-    fit_data = np.vstack([np.array(stim_params), np.array(fit_data)*np.array(n_trials), np.array(n_trials)])
+    fit_data = np.vstack([np.array(stim_params), (np.array(fit_data)*np.array(n_trials)).astype(int), np.array(n_trials)])
     if not options:
         options = dict();   # initialize as an empty dictionary
         options['sigmoid'] = 'norm';   # choose a cumulative Gauss as the sigmoid  
@@ -285,10 +285,8 @@ def fit_data(info_df, data_type="same", lightweight=True):
         #    fit_params, fit_options = combine_data(temp_params, fit_params, fit_options)
         temp_params = None 
     # run fit on averages for illustration purposes
-    t_f = np.array([info_df[x] for x in info_df.columns if x.startswith("testbigger-{0}-".format(data_type))])
-    t_n = np.array([info_df[x] for x in info_df.columns if x.startswith("ntrials-{0}-".format(data_type))])
-    fit_data = [int(x) for x in list(np.sum(t_n * t_f, 1))]
-    n_trials = [int(x) for x in list(np.sum(t_n, 1))]
+    fit_data= [ info_df[x].mean() for x in info_df.columns if x.startswith("testbigger-{0}-".format(data_type)) ]
+    n_trials = [ info_df[x].sum() for x in info_df.columns if x.startswith("ntrials-{0}-".format(data_type)) ]
     temp_params, threshold, slope = fit_ps(test_inner_sizes, fit_data, n_trials)
     pse_slope.append((threshold, slope))
     #fit_params, fit_options = combine_data(temp_params, fit_params, fit_options)
